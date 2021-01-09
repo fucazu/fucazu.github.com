@@ -72,8 +72,8 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   #logo {
-    width: 560px;
-    height: 300px;
+    width: 100vw;
+    height: 50vw;
   }
 }
 @media screen and (max-width: 480px) {
@@ -85,5 +85,10 @@ a:hover {
   #logo {
     width: 100vw;
     height: 50vw;
+  }
+}
+@media screen and (max-height: 600px) {
+  #logo {
+    margin-top: 80px;
   }
 }
