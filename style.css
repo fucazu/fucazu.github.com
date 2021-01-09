@@ -1,0 +1,109 @@
+:root {
+  --padding: 10px;
+  --theme-blue: #0460d9;
+  --theme-black: #141619;
+}
+* {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 28px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: var(--theme-black);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.texto span {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+  background-image: none;
+  color: white;
+  min-width: 150px;
+  font-size: 43px;
+  transition: color .3s;
+}
+a:hover {
+  color: #0460d9;
+}
+#logo {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+}
+@media screen and (min-width: 900px) {
+  #logo {
+    width: 800px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .email {
+    font-size: 35px;
+  }
+  #logo {
+    width: 560px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .email {
+    font-size: 30px;
+    word-wrap: normal;
+  }
+  #logo {
+    width: 480px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .email {
+    font-size: 25px;
+    word-wrap: normal;
+  }
+  .container {
+    width: calc(100% - (2 * var(--padding)));
+    height: calc(100% - (2 * var(--padding)));
+    padding: var(--padding);
+  }
+  #logo {
+    width: 100vw;
+    height: 50vw;
+  }
+}
