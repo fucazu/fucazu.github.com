@@ -6,6 +6,7 @@
 * {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 28px;
+  word-break: break-word;
 }
 
 html {
@@ -47,17 +48,13 @@ body {
   text-align: center;
 }
 
-.texto span {
-  font-size: 50px;
-}
-
 a {
   text-decoration: none;
   background-image: none;
   color: white;
-  min-width: 150px;
-  font-size: 43px;
   transition: color .3s;
+  word-wrap: break-word;
+  margin-bottom: 8px;
 }
 a:hover {
   color: #0460d9;
@@ -74,29 +71,12 @@ a:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  .email {
-    font-size: 35px;
-  }
   #logo {
     width: 560px;
     height: 300px;
   }
 }
 @media screen and (max-width: 480px) {
-  .email {
-    font-size: 30px;
-    word-wrap: normal;
-  }
-  #logo {
-    width: 480px;
-    height: 250px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .email {
-    font-size: 25px;
-    word-wrap: normal;
-  }
   .container {
     width: calc(100% - (2 * var(--padding)));
     height: calc(100% - (2 * var(--padding)));
