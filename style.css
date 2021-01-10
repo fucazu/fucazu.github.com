@@ -1,25 +1,7 @@
-:root {
-  --padding: 10px;
-  --theme-blue: #0460d9;
-  --theme-black: #141619;
-}
-* {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 28px;
-  word-break: break-word;
-}
-
-html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: var(--theme-black);
   height: 100%;
   width: 100%;
   margin: 0;
