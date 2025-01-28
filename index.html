@@ -64,12 +64,19 @@
       margin: auto;
       text-align: center
     }
-
-    a {
+    
+    a.icon-home {
       text-decoration: none;
       background-image: none;
       color: #000;
-      margin-bottom: 8px
+      margin-bottom: 8px;
+      margin-left: 5px;
+
+      i.fa-brands, i.fa-solid {
+        &:hover {
+          color: var(--theme-blue) !important;
+        }
+      }
     }
 
     #logo {
@@ -120,11 +127,11 @@
     </div>
     <br>
     <div style="display: inline;">
-      <a style="margin-left: 5px;" href="https://github.com/fucazu"><i class="fa-brands fa-github" style="color: #fff;"></i></a>
-      <a style="margin-left: 5px;" href="https://gitlab.com/fucazu"><i class="fa-brands fa-gitlab" style="color: #fff;"></i></a>
-      <a style="margin-left: 5px;" href="https://www.linkedin.com/in/rafaelsanchesdev/"><i class="fa-brands fa-linkedin" style="color: #fff;"></i></a>
-      <a style="margin-left: 5px;" href="mailto:rafaelsanchesdev@gmail.com"><i class="fa-solid fa-envelope" style="color: #fff;"></i></a>
-      <a style="margin-left: 5px;" href="https://www.impressao3d.dev.br"><i class="fa-solid fa-store" style="color: #fff;"></i></a>
+      <a class="icon-home" href="https://github.com/fucazu"><i class="fa-brands fa-github" style="color: #fff;"></i></a>
+      <a class="icon-home" href="https://gitlab.com/fucazu"><i class="fa-brands fa-gitlab" style="color: #fff;"></i></a>
+      <a class="icon-home" href="https://www.linkedin.com/in/rafaelsanchesdev/"><i class="fa-brands fa-linkedin" style="color: #fff;"></i></a>
+      <a class="icon-home" href="mailto:rafaelsanchesdev@gmail.com"><i class="fa-solid fa-envelope" style="color: #fff;"></i></a>
+      <a class="icon-home" href="https://www.impressao3d.dev.br"><i class="fa-solid fa-store" style="color: #fff;"></i></a>
     </div>
   </div>
 
